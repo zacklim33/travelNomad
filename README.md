@@ -1,5 +1,7 @@
 # Travel recommendation website
 A simple front-end travel recommendation website using HTML, CSS and JavaScript. 
+Link: [Demo](https://zacklim33.github.io/travelNomad/)
+
 
 ## Key JavaScript functions used:  
 * fetch() API to get json data from a data folder (to simulate an API call)
