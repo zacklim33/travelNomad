@@ -1,6 +1,6 @@
 # Travel recommendation website
-A simple front-end travel recommendation website using HTML, CSS and JavaScript. 
-Link: [Demo](https://zacklim33.github.io/travelNomad/)
+* A simple front-end travel recommendation website using HTML, CSS and JavaScript.
+* [Demo Link](https://zacklim33.github.io/travelNomad/)
 
 
 ## Key JavaScript functions used:  
