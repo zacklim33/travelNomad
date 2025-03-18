@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    color: #fff;
+    background-color: #1a2525; /* Match the header background to fill the gap */
+    height: 100%; /* Ensure body takes full height */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a2525;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    flex-grow: 1; /* Allows nav to take available space */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex; /* Keeps links inline and centered */
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00c4b4;
+    transform: scale(1.2);
+    text-decoration: double underline;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Aligns search bar vertically with header */
+    width: 427px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-bar #btnSearch,
+.search-bar #btnClear {
+    padding: 10px 20px;
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.search-bar #btnClear {
+    background-color: #ccc;
+    color: #000;
+}
+
+#btnSearch:hover,
+#btnClear:hover {
+    background-color: #019a8a;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    position: relative;
+    margin-top: 80px; /* Adjust to account for fixed header height */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* Semi-transparent overlay for readability */
+}
+
+
+.hero-content {
+    position: relative;
+    max-width: 70vw; /* Increased to accommodate team members */
+    margin-left: 150px; /* Offset to the right */
+    margin-top: 30px; /* Adjust height */
+    z-index: 2;   
+    padding: 20px; /* Padding inside the panel */
+    border-radius: 10px; /* Soft corners for panel effect */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight:800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Social Icons */
+.social-icons {
+    position: fixed; /* Fixes the icons to the left margin */
+    left: 0;
+    top: 50%; /* Centers vertically on the page */
+    transform: translateY(-50%); /* Adjusts for the height of the container */
+    display: flex;
+    flex-direction: column; /* Stacks icons vertically */
+    gap: 20px; /* Space between icons */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background like in the mockup */
+    padding: 20px 10px; /* Padding for the vertical strip */
+    z-index: 10; /* Ensures icons stay above other content */
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px; /* Slightly larger icons to match the mockup */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00c4b4;
+}
+

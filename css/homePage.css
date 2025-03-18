@@ -1,0 +1,104 @@
+/* Hero Section Styles */
+.hero-content {
+    position: relative;
+    max-width: 650px;
+    margin-left: 150px;
+    margin-top: 90px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Book Now Button */
+.btnBook {
+    padding: 15px 30px;
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnBook:hover {
+    background-color: #019a8a;
+}
+
+
+/* results section */
+#results {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards into the container */
+    max-width: 95vw;
+    max-height: 500px;
+   /* background-color: #00c4b4; */
+    z-index: 9;
+    padding: 20px;
+    gap: 30px; /* Space between cards */
+    
+  }
+
+  .result-item {
+    width: 300px; /* Fixed width like in the image */
+    background: #fff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Ensures rounded corners apply to image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px; /* Space at the bottom */
+    margin-bottom: 20px;
+}
+
+.result-item img {
+    width: 100%; /* Image takes full width of the card */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-top-left-radius: 10px; /* Round top corners */
+    border-top-right-radius: 10px;
+}
+
+.result-item h2 {
+    font-size: 20px; /* Smaller than before to match the image */
+    margin: 10px 0;
+    color: #333; /* Darker text for contrast */
+    text-align: center;
+}
+
+.result-item p {
+    font-size: 14px;
+    color: #666; /* Slightly lighter text for description */
+    text-align: center;
+    padding: 0 15px; /* Padding for readability */
+    margin-bottom: 15px;
+}
+
+.result-item .btnBook {
+    padding: 10px 20px; /* Smaller padding to match the image */
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.result-item .btnBook:hover {
+    background-color: #019a8a; /* Darker shade on hover */
+}

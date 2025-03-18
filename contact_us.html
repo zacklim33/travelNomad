@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us @ Travel Nomad</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/contactUs.css">
+
+  <!-- Adding Font Awesome for social media icons -->
+  <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+
+<header>
+  <div id="logo"> 
+    <h1>TravelNomad</h1>
+  </div>
+  
+  <nav>
+    <ul>
+      <li><a href="./index.html" id="home">Home </a></li>
+      <li><a href="./about_us.html" id="aboutUs">About Us </a></li>
+      <li><a href="./contact_us.html" id="contactUs">Contact Us </a></li>
+     </ul>
+   </nav>
+   <!-- placeholder for search-bar -->
+   <div class="search-bar">  </div>
+</header>
+
+
+<body>
+  <!-- Social Icons -->
+  <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+  
+  <!-- Hero Section (About Us) -->
+  <section class="hero">
+  
+    <div class="hero-content">
+        <h1>CONTACT US  </h1>
+        <h5> Your feedback helps us improve. <br/>
+            Take a moment to share. </h5>
+        <hr>
+        <br/>
+        
+        <p>Main office: </p> <br/>
+        <p>Location: New York City <br/>
+        Tel: +1-123-1234567 <br/>
+        Email: contact@someURL.com <br/> </p>
+    </div>
+
+    
+    <!-- container to hold contact us form -->            
+      <form class="contact-form">     
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btnSubmit" onclick="thankyou()">Submit</button>
+      </form>
+    </div>
+
+  </section>
+
+<script>
+  const thankyou = () => { //simple validation of the contact us form
+    let isEmpty = false;
+
+    const inputs = document.querySelectorAll("input");
+    for (const input of inputs) isEmpty = input.value.trim() === '' ?  true: false;
+
+    if ( document.getElementById('message').value === '' ) isEmpty = true;
+
+    if (! isEmpty) {
+      alert('Thank you for contacting us!') ; //prompt a thank you message
+      window.location.href = "./index.html"; //redirect back to homepage
+    } else {
+      alert('Please fill up all the fields first!') ; //prompt a thank you message
+    }
+  }
+</script>
+
+</body>
+</html>

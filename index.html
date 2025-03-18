@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendation for the traveling nomad</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/homePage.css">
+  
+  <!-- Adding Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<header>
+  <div id="logo"> 
+    <h1>TravelNomad</h1>
+  </div>
+  
+  <nav>
+    <ul>
+      <li><a href="./index.html" id="home">Home </a></li>
+      <li><a href="./about_us.html" id="aboutUs">About Us </a></li>
+      <li><a href="./contact_us.html" id="contactUs">Contact Us </a></li>
+     </ul>
+   </nav>
+
+    <div class="search-bar">  
+      <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+      <button id='btnSearch' onClick='searchPlace()'> Search</button>
+      <button id='btnClear' onClick="resetSearch()"> Clear</button>
+    </div>
+
+</header>
+
+
+<body>
+
+ <!-- Hero Section -->
+ <section class="hero">
+    <div class="hero-content">
+        <h1>EXPLORE NEW DREAMS</h1>        
+        <p> Explore new dreams with novel territories. Discovery new cultures, history, landscapes and nature that which captivate your heart and sparks wonderment. Pursue the trill of being trilled by your new dreams. </p>      
+        <button class="btnBook">Book Now</button>
+    </div>
+
+    <div id="results">
+
+
+    </div>
+
+
+</section>
+
+
+<div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+
+<script src="./js/mainPage.js"></script>
+
+</body>
+
+
+</html>

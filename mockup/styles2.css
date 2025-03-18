@@ -1,0 +1,84 @@
+.ourCompany {
+    padding: 1.2rem;
+    background: rgba(0, 0, 0, 0.35); /* Semi-transparent background like in the mockup */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
+    border-radius: 1rem;
+
+}
+
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+/* Team Members */
+#ourTeam {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;    
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 30px;
+
+    padding: 20px; /* Padding inside the panel */
+    border-radius: 10px; /* Soft corners for panel effect */
+}
+
+.team-member {
+    padding: 5px;    
+    display: grid;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.35); /* Darker contrast panel for each team member  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
+}
+
+.member-icon {
+    font-size: 40px; /* Placeholder for circular icons */
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.btnMember {
+    padding: 10px 20px;
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.btnMember:hover {
+    background-color: #019a8a;
+}
