@@ -15,7 +15,13 @@ function resetSearch() {
 
 //to dynamically display results matching destination or keyword
 function searchPlace() {
-    const input = document.getElementById('conditionInput').value.toLowerCase().trim();            
+    const input = document.getElementById('conditionInput').value.toLowerCase().trim(); 
+    
+    if( input==='')  {
+        alert('Please enter some search criteria');
+        return;
+    }
+
     resultDiv.innerHTML = ''; //reinitialize the contents of resultDiv
 
     fetch(dataUrl)
