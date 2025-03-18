@@ -8,7 +8,7 @@
 * using JS built-in array methods to dynamically render results (travel recommendation) in homepage
 * JavaScript to validate contact us form
 
-## For search terms to use in home page
+## For search terms to be used in home page search bar
 * beaches
 * temples
 * Japan, Australia, Brazil
