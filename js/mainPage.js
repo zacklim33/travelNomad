@@ -22,6 +22,7 @@ function searchPlace() {
         return;
     }
 
+    console.log("Searching for:", input);
     resultDiv.innerHTML = ''; //reinitialize the contents of resultDiv
 
     fetch(dataUrl)
