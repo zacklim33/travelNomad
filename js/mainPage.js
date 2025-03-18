@@ -48,8 +48,20 @@ function searchPlace() {
         
         /* if no results from country or city search, 
          then keyword (input) should match the keys of array (beaches or temples) */
-        if(results.length ===0) results = data[input];        
-        
+        if(results.length === 0) {
+            switch(input) {
+              case 'temple':
+                case 'temples':              
+                results = data["temples"];
+                break;        
+              case 'beach':
+                case 'beaches':
+                results = data["beaches"];
+                break;
+              default:
+                result = data[input];
+            }
+        }
 
         if (results) {            
             resultDivHTML = results.map( (details, index) => {
@@ -79,4 +91,9 @@ function searchPlace() {
  }
 
 
-
+ //to run searchPlace() if user had typed in some keywords in search and pressed entered
+document.addEventListener('keydown', function (e) {
+  if(e.key === 'Enter' &&
+     document.getElementById('conditionInput').value.trim() !='' ) searchPlace();  
+})
+ 
